@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152554">
+  <meta name="description" content="Apprends l'informatique, le graphisme et le numérique pas à pas.">
+  <title>Académie Numérique</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">🎓 Académie Numérique</div>
+    <p class="eyebrow">APPRENDS • PRATIQUE • PROGRESSE</p>
+    <h1>Le numérique, <span>à ta portée.</span></h1>
+    <p>Des cours pour apprendre à ton rythme, du niveau débutant aux premières réalisations.</p>
+    <label class="search-label" for="search">Trouver une formation</label>
+    <input id="search" type="search" placeholder="Ex. Word, Photoshop, web…" autocomplete="off">
+  </header>
+  <main>
+    <section class="section-heading">
+      <div><p class="eyebrow dark">NOS FORMATIONS</p><h2>Choisis ton parcours</h2></div>
+      <span id="course-count" class="count"></span>
+    </section>
+    <div id="categories" class="chips" aria-label="Filtrer les formations"></div>
+    <section id="courses" class="course-grid" aria-live="polite"></section>
+    <section class="lesson-panel" id="lesson-panel" hidden>
+      <button id="close-lesson" class="close-btn" aria-label="Fermer le cours">✕</button>
+      <p class="eyebrow dark">TA LEÇON</p>
+      <h2 id="lesson-title"></h2>
+      <div id="lesson-content"></div>
+      <div class="quiz" id="quiz"></div>
+    </section>
+    <section class="tip">
+      <div class="tip-icon">💡</div><div><h3>Conseil pour bien apprendre</h3><p>Lis la leçon, reproduis les étapes sur ton ordinateur, puis réponds au petit quiz. La pratique aide à retenir.</p></div>
+    </section>
+  </main>
+  <footer><strong>Académie Numérique</strong><p>Une base de départ pour apprendre et ajouter tes propres cours.</p></footer>
+  <script src="./app.js"></script>
+</body>
+</html>

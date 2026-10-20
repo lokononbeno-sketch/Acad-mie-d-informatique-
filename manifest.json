@@ -1,0 +1,13 @@
+{
+  "name": "Académie Numérique",
+  "short_name": "Académie",
+  "description": "Apprends l'informatique, le graphisme et le numérique.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#152554",
+  "icons": [
+    {"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
