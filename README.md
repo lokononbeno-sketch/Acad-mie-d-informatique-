@@ -1,34 +1,23 @@
-# Académie Numérique
+# Académie Numérique — Version 2
 
-Une première version de plateforme d'apprentissage responsive et installable sur Android.
+Plateforme web responsive d’apprentissage gratuit, adaptée aux téléphones.
 
-## Contenu
-- Informatique générale
-- Graphisme et sérigraphie
-- Photoshop, InDesign et Illustrator
-- Word, Excel et PowerPoint
-- Internet et sécurité
-- Maintenance informatique
-- Développement web
-- Recherche, filtres par catégorie, leçons, exercices et mini-quiz
+## Cette version comprend
+- Interface plus professionnelle et adaptée aux mobiles
+- 12 formations et filtres par catégorie
+- 36 leçons introductives, avec explications, exercices et quiz corrigés
+- Recherche de formations et suivi de progression local
+- Manifest et service worker pour installation comme application web progressive
 
-## Tester sur ordinateur
-Ouvre `index.html` dans un navigateur. Certaines fonctions d'installation hors ligne nécessitent un serveur HTTPS.
+## Mettre à jour ton dépôt GitHub depuis Android
+1. Télécharge le ZIP et décompresse-le avec l’application Fichiers ou un outil d’archive.
+2. Ouvre ton dépôt GitHub dans Chrome et choisis **Add file → Upload files**.
+3. Sélectionne les fichiers contenus dans le dossier `academie-numerique-v2` et envoie-les à la racine du dépôt.
+4. Confirme **Commit changes**. Si GitHub demande de remplacer les anciens fichiers portant les mêmes noms, accepte pour appliquer la mise à jour.
+5. Vérifie dans **Settings → Pages** que la branche `main` et le dossier `/ (root)` sont publiés.
+6. Ouvre le lien GitHub Pages dans Chrome et actualise la page. Si l’ancienne version reste affichée, ferme l’onglet et rouvre le site.
 
-## Publier sur GitHub Pages
-1. Crée un dépôt GitHub nommé `academie-numerique`.
-2. Envoie tous les fichiers de ce dossier à la racine du dépôt.
-3. Dans le dépôt, ouvre **Settings → Pages**.
-4. Choisis **Deploy from a branch**, branche `main`, dossier `/ (root)`, puis **Save**.
-5. Attends la publication et ouvre l'adresse indiquée par GitHub Pages.
-
-## Installer sur Android
-Après publication sur HTTPS, ouvre le site avec Chrome sur Android. Dans le menu, choisis **Installer l'application** ou **Ajouter à l'écran d'accueil** (le libellé varie selon l'appareil).
-
-**Important :** cela installe une application web progressive (PWA), pas un fichier APK natif. Pour produire un vrai `.apk`, il faudra ensuite emballer le site avec Capacitor/Android ou utiliser un service de conversion PWA en application Android. GitHub héberge le code mais ne transforme pas, à lui seul, le site en APK.
-
-## Ajouter du contenu
-Les cours de démonstration sont dans le tableau `courses` du fichier `app.js`. Pour ajouter une formation, copie un objet existant et modifie `id`, `title`, `category`, `icon`, `desc`, `lesson`, `body`, `steps`, `question`, `answers`, `correct` et `explain`.
-
-## Limites de cette version
-C'est une base de départ avec des leçons introductives, pas encore un programme complet certifiant. Les logiciels Adobe et Microsoft sont des produits distincts : l'application enseigne leurs concepts, elle ne les remplace pas.
+## Important
+- La progression est enregistrée uniquement sur cet appareil et dans ce navigateur ; il n’y a pas encore de compte utilisateur ni de synchronisation.
+- Les 36 leçons sont un socle introductif à enrichir, pas un cursus complet certifiant.
+- Cette version est une application web progressive (PWA), pas encore un APK natif.
